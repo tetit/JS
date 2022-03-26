@@ -1,0 +1,99 @@
+﻿<!DOKTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>instr</title>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+			let c = 0;
+			let i = prompt("Ankieta, proszę wyrazić zgodę : y, n ", " ");
+			
+           switch(i) {
+			case "y":
+				document.write("świetnie <br><br>");
+				break;
+			case "n":
+				document.write("szkoda <br>");
+				die();
+				break;
+			default:
+				document.write("niepoprawna wartość <br>");
+				die();
+			}
+		
+			
+			let a = prompt("1) suma 5+2= ", " ");
+			let b = prompt("2) ile samogłosek w słowie mama ", " ");
+			let d = prompt("3) ile kól ma camochod? ", " ");
+			let x = prompt("4) iloczyn 3*4= ", " ");
+			let z = prompt("5) pierwszy astronawta: a - Gagarin, b -Titow", " ");
+			
+			switch(a) {
+			case "7":
+				document.write("1) poprawnie<br>");
+				c = c + 1;
+				break;
+			
+			default:
+				document.write("1) niepoprawnie <br>");
+			}
+			switch(b) {
+			case "2":
+				document.write("2) poprawnie <br>");
+				c = c + 1;
+				break;
+			
+			default:
+				document.write("2) niepoprawnie <br>");
+			}
+			switch(d) {
+			case "4":
+				document.write("3) poprawnie <br>");
+				c = c + 1;
+				break;
+			
+			default:
+				document.write("3) niepoprawnie <br>");
+			}
+			switch(x) {
+			case "12":
+				document.write("4) poprawnie <br>");
+				c = c + 1;
+				break;
+			
+			default:
+				document.write("4) niepoprawnie <br>");
+			}
+			switch(z) {
+			case "a":
+				document.write("5) poprawnie <br>");
+				c = c + 1;
+				break;
+			
+			default:
+				document.write("5) niepoprawnie <br>");
+			}
+			switch(c) {
+			case 0 || 1:
+				document.write("punky = " +c+ "<br> ocena: 2" );
+				break;
+			case 2 || 3:
+				document.write("punky = " +c+ "<br> ocena: 3" );
+				break;
+			case 4:
+				document.write("punky = " +c+ "<br> ocena: 4" );
+				break;
+			case 5:
+				document.write("punky = " +c+ "<br> ocena: 5" );
+				break;
+			
+			default:
+				document.write("punky = 0 <br> ocena: 2");
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOKTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>sin_cos_tg</title>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+			let c = 0;
+			let i = prompt("Wprowadz haslo: ", " ");
+			
+           while (i != 123){
+               c++;
+               if (c < 4){
+		   
+            //document.write("<b> Niepoprawne haslo, sprobuj ponowie: </b><br>");
+			i = prompt("Wprowadz haslo ponowie: ", " ");}
+               else 
+                   die();
+		   
+			}
+			
+			let a = prompt("Wprowadz pierwsą wartość: ", " ");
+            let b = prompt("Wprowadz drugą wartość: ", " ");
+			let x = a/1;
+            let y = b/1;
+
+			for (x; x <= y; x++){			
+				
+			 document.write("<br><b>sin("+x+") = "+Math.sin(x).toFixed(3)+"<br>");
+			 document.write("<b>cos("+x+") = "+Math.cos(x).toFixed(3)+"<br>");
+			 document.write("<b>tan("+x+") = "+Math.tan(x).toFixed(3)+"<br>");
+			 document.write("<b>ctan("+x+") = "+(1/Math.tan(x)).toFixed(3)+"<br><br>");
+			 x = x + 0.5;
+			}
+
+        </script>
+    </body>
+</html>

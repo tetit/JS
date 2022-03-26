@@ -1,0 +1,76 @@
+﻿<!DOKTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>ob_P</title>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+		
+			do {
+			
+			        
+			let c = 0;
+			let x = prompt("Pole i obwód są obliczane <br> Wybierz: <br> <b>1</b> - Trapez <br> <b>2</b> - Prostokąt <br> <b>3</b> - Kolo", " ");
+			
+           switch(x) {
+			case "1":
+				let a = prompt("Wprowadż długośc <b>a</b>");
+				let b = prompt("Wprowadż długośc <b>b</b>");
+				let c = prompt("Wprowadż długośc <b>c</b>");
+				let d = prompt("Wprowadż długośc <b>d</b>");
+				let h = prompt("Wprowadż wysokośc <b>h</b>");
+				a = a/1;
+				b = b/1;
+				c = c/1;
+				d = d/1;
+				h = h/1;
+				if(a && b && c && d && h > 0){
+					let P = 1/2*(a+b)*h;
+					let O = a+b+c+d;
+					document.write("Pole Trapez: " +P);
+					document.write("<br>Obwód Trapez: " +O);
+					break;
+					document.write("Wartość musi być dodatnia<br>");
+				}
+				break;
+			case "2":
+				let t = prompt("Wprowadż długośc <b>a</b>");
+				let u = prompt("Wprowadż długośc <b>b</b>");
+				t = t/1;
+				u = u/1;
+				if(a && b > 0){
+					let P = a*b;
+					let O = 2*(a+b);
+					document.write("Pole Trapez: " +P);
+					document.write("<br>Obwód Trapez: " +O);
+					break;
+					document.write("Wartość musi być dodatnia<br>");
+				}
+				break;
+			case "3":
+				let r = prompt("Wprowadż długośc <b>r</b>");
+				r = r/1;
+				
+				if(r > 0){
+					let P = 3.14*r*r;
+					let O = 2*3.14*r;
+					document.write("Pole Trapez: " +P);
+					document.write("<br>Obwód Trapez: " +O);
+					break;
+					document.write("Wartość musi być dodatnia<br>");
+				}
+				break;
+			default:
+				document.write("Wartość musi być dodatnia<br>");
+			}
+		
+			let i = prompt("Jeszcze raz? y or n <b>a</b>");
+			
+			}
+			while (i == 'y');
+			
+		</script>
+	</body>
+</html>
